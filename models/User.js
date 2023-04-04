@@ -9,7 +9,7 @@ const schema = new Schema({
     },
     password: {
         type: String,
-        equired: true
+        required: true
     },
     links: [{
         type: Types.ObjectId,

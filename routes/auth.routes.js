@@ -49,7 +49,7 @@ router.post(
     '/login',
     [
         check('email', 'Enter correct email').normalizeEmail({ gmail_remove_dots: false }).isEmail(),
-        check('password', 'Ebter password').exists()
+        check('password', 'Enter password').exists()
     ],
     async (req, res) => {
     try{
